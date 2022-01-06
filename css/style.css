@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css?family=Comfortaa:400,500,700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: "Comfortaa";
+}
+
+section {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #161623;
+    overflow: hidden;
+}
+
+section::before {
+    content: "";
+    position: absolute;
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    background: -webkit-gradient(linear, left top, left bottom, from(#dd9804), to(#ca0bba));
+    background: linear-gradient(#dd9804, #ca0bba);
+    -webkit-transform: translate(-150px, -100px);
+    transform: translate(-150px, -100px);
+}
+
+section::after {
+    content: "";
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background: -webkit-gradient(linear, left top, left bottom, from(#31ff38), to(#2196f3));
+    background: linear-gradient(#31ff38, #2196f3);
+    -webkit-transform: translate(150px, 150px);
+    transform: translate(150px, 150px);
+}
+
+section .box {
+    position: relative;
+    width: 240px;
+    height: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    -webkit-backdrop-filter: blur(25px);
+    backdrop-filter: blur(25px);
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 25px 45px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 25px 45px rgba(0, 0, 0, 0.25);
+    z-index: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
+}
+
+section .box .box_info h2 {
+    color: #28c69d;
+    margin-bottom: 30px;
+}
+
+section .box .box_info .battery_content {
+    width: 150px;
+    height: 50px;
+    border: 2px solid #28c69d;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    padding: 5px 5px 42px 5px;
+}
+
+section .box .box_info .battery_content::before {
+    content: "";
+    position: absolute;
+    top: 52.6%;
+    right: 38px;
+    -webkit-transform: translateY(-200%);
+    transform: translateY(-200%);
+    width: 7px;
+    height: 16px;
+    background: #28c69d;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+section .box .box_info .battery_content .level {
+    height: 37px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#dd9804), to(#ca0bba));
+    background: linear-gradient(#dd9804, #ca0bba);
+    border-radius: 2px;
+}
+
+section .box .box_info .battery_info {
+    color: #28c69d;
+    font-size: 2em;
+    margin-bottom: 25px;
+}
